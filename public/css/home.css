@@ -12,6 +12,17 @@
   display: block;
   margin: 15px auto 30px;
 }
+
+.home button {
+  display: block;
+  margin: 30px auto;
+  background-color: #444444;
+  border: none;
+  padding: 7px;
+  color: white;
+  border-radius: 4px;
+}
+
 .home header li {
   width: 100%;
   background-color: #444444;
@@ -25,15 +36,6 @@
 .home header a {
   color: white;
   text-transform: uppercase;
-}
-.home button {
-  display: block;
-  margin: 30px auto;
-  background-color: #444444;
-  border: none;
-  padding: 7px;
-  color: white;
-  border-radius: 4px;
 }
 
 /* banner */
@@ -50,13 +52,14 @@
 
 .home article {
   width: 100%;
- 
+  margin-bottom: 30px;
 }
-.home article .imagen{
+
+.home article .imagen {
   position: relative;
 }
 
-.home article img.photo{
+.home article img.photo {
   width: 100%;
 }
 
@@ -110,10 +113,32 @@ p {
 }
 
 @media (min-width: 768px) {
- 
-    .home header li {
-       
-        background-color: blue;
-      
-      }
+
+  /* header */
+
+  .home button {
+    display: none;
+  }
+
+  .home header li {
+    display: inline-block;
+    width: 16.02%;
+    border-bottom: none;
+  }
+
+  /* banner */
+
+  .home .banner img {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* products */
+
+  .home article {
+    width: 49.62%;
+    display: inline-block;
+  }
+
 }
