@@ -113,7 +113,6 @@ p {
 }
 
 @media (min-width: 768px) {
-
   /* header */
 
   .home button {
@@ -140,5 +139,43 @@ p {
     width: 49.62%;
     display: inline-block;
   }
+}
 
+@media (min-width: 1024px) {
+  /* hader */
+  .home header li {
+    width: 16.3%;
+  }
+  /* products */
+
+  .home article {
+    width: 32.95%;
+  }
+
+  /* footer */
+
+  .home footer{
+    background-color: #b92519;
+    padding: 60px 0;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .home footer a {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  .home footer li {
+    display: inline-block;
+    width: 8%;
+    border-bottom: none;
+    border-right: 2px solid white;
+    padding: 8px 0;
+  }
+
+  .home footer li:last-child {
+    border-right: none;
+
+  }
 }
