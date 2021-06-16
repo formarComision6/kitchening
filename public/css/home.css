@@ -50,7 +50,14 @@
 
 .home article {
   width: 100%;
+ 
+}
+.home article .imagen{
   position: relative;
+}
+
+.home article img.photo{
+  width: 100%;
 }
 
 .home article img.label {
@@ -67,7 +74,8 @@
   position: absolute;
   width: 100%;
   padding: 5px 0;
-  top: 80px;
+  top: 45%;
+  left: 0px;
 }
 
 .home article a.more {
