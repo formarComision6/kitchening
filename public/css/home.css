@@ -48,6 +48,8 @@
 
 .home .products {
   margin: 30px 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .home article {
@@ -112,17 +114,30 @@ p {
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 426px) {
   /* header */
 
   .home button {
     display: none;
   }
 
+  .home header ul{
+    overflow: hidden;
+  }
+
   .home header li {
-    display: inline-block;
-    width: 16.02%;
+    width: 15.5%;
     border-bottom: none;
+    float: left;
+    margin-right: 1.4%;
+  }
+
+  .home header li:last-child{
+    margin-right: 0;
+  }
+
+  .home header a{
+    font-size: 0.55rem;
   }
 
   /* banner */
@@ -130,27 +145,47 @@ p {
   .home .banner img {
     display: block;
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0;
   }
 
   /* products */
 
   .home article {
-    width: 49.62%;
-    display: inline-block;
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+  }
+  .home article:nth-child(even){
+    margin-right: 0;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   /* hader */
+
+  .home header a{
+    font-size: 1rem;
+  }
+
   .home header li {
-    width: 16.3%;
+    width: 15.5%;
   }
   /* products */
 
   .home article {
-    width: 32.95%;
+    width: 32%;
+    margin-right: 0;
+    margin-right: 2%;
+
   }
+
+  .home article:nth-child(even){
+    margin-right: 2%;
+  }
+  .home article:nth-child(3n){
+    margin-right: 0;
+  }
+
 
   /* footer */
 
@@ -168,7 +203,7 @@ p {
 
   .home footer li {
     display: inline-block;
-    width: 8%;
+    width: 110px;
     border-bottom: none;
     border-right: 2px solid white;
     padding: 8px 0;
