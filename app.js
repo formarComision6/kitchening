@@ -7,4 +7,4 @@ app.use(express.static('public'));
 
 app.get('/', (req,res) => res.sendFile(path.join(__dirname, 'views', 'home.html')))
 
-app.listen(port, () => console.log('Server runing in http://localhost:' + port))
+app.listen(process.env.PORT || port, () => console.log('Server runing in http://localhost:' + process.env.PORT || port))
